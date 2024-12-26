@@ -589,6 +589,7 @@ class VisualDNN(toga.App):
         self.draw_grid(self.top_left_x, self.top_left_y)
         self.clear_output_box()
         self.clear_all_neuron_boxes()
+        self.prediction_label.text = "Prediction: N/A"
 
     def draw_grid(self, top_left_x=0, top_left_y=0):
         """Draw the grid on the canvas starting at (top_left_x, top_left_y)."""
